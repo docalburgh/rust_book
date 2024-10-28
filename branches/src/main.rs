@@ -1,9 +1,9 @@
 fn main() {
-    let number = 3;
-    
-    if number < 5 {
-        println!("Condition was true");
-    } else {
-        println!("Condition was false");
-    }
+    let condition = true;
+
+    let six: i32 = 6;
+
+    let number = if condition { 5 } else { six };
+
+    println!("The value of number is: {number}");
 }
