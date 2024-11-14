@@ -1,1 +1,1 @@
-/home/andy/projects/variables/target/debug/variables: /home/andy/projects/variables/src/main.rs
+/home/andy/projects/rust_book/variables/target/debug/variables: /home/andy/projects/rust_book/variables/src/main.rs

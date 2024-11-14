@@ -5,4 +5,4 @@ w1
 10/28/24 MON 4.1 60 min
 w2
 11/3/24 SUN 110 min
-11/4/24 MON 20 min
+11/4/24 MON 140 min
