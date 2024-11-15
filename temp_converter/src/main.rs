@@ -5,6 +5,7 @@ use std::time::Duration;
 fn main() {
     let mut intro = 0;
     
+    //flashes welcome message three times
     while intro < 3 {
         print!("WELCOME TO TEMP CONV!");
         io::stdout().flush().unwrap();
@@ -20,21 +21,27 @@ fn main() {
         intro += 1;
     }
 
-    println!("Enter temperature in fahrenheit.");
-    
-    let mut fahr_temp = String::new();
+    loop {
+        println!("Enter temperature in fahrenheit.");
+        
+        let mut fahr_temp = String::new();
 
-    io::stdin()
-        .read_line(&mut fahr_temp)
-        .expect("Failed to read line");
+        io::stdin()
+            .read_line(&mut fahr_temp)
+            .expect("Failed to read line");
 
-    let fahr_temp: i32 = match fahr_temp.trim().parse() {
-        Ok(num) => num,
-        Err(_) => {
-            println!("Please enter a valid number.");
-            return;
-        }
-    };
-    
+        let fahr_temp: f64 = match fahr_temp.trim().parse() {
+            Ok(num) => num,
+            Err(_) => {
+                println!("Please enter a valid number.");
+                return;
+            }
+        };
+
+        let celcius = (fahr_temp - 32.0) * 5.0 / 9.0;
+
+        println!("Your temperature in celcius is {}", celcius);
+    }
+
 }
 
