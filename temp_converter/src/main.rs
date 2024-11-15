@@ -10,7 +10,7 @@ fn main() {
         print!("WELCOME TO TEMP CONV!");
         io::stdout().flush().unwrap();
 
-        // Wait a moment to let the user see the text
+        // Wait a second to let the user see the text
         std::thread::sleep(std::time::Duration::from_secs(1));
 
         // Clear the line
