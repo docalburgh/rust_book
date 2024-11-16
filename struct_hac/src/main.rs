@@ -12,9 +12,9 @@ fn main() {
         rating: 83,
     };
     
-    fn sorc(movie: &Movie) {
+    fn name_director(movie: &Movie) {
         println!("The director of {} is {}", movie.name , movie.director);
     }
     
-    sorc(&sorcerer);
+    name_director(&sorcerer);
 }
