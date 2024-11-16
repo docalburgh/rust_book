@@ -11,6 +11,10 @@ fn main() {
         director: String::from("William Friedkin"),
         rating: 83,
     };
-
-    println!("The director of {} is {}", sorcerer.name , sorcerer.director);
+    
+    fn sorc(movie: &Movie) {
+        println!("The director of {} is {}", movie.name , movie.director);
+    }
+    
+    sorc(&sorcerer);
 }
